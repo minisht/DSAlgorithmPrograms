@@ -1,4 +1,4 @@
-package com.minishtera;
+package com.listexample;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,12 +7,12 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	    Theatre theatre = new Theatre("Olympian", 8, 12);
-	    List<Theatre.Seat> seatCopy = new ArrayList<>(theatre.seats);
-	    printList(seatCopy);
+        Theatre theatre = new Theatre("Olympian", 8, 12);
+        List<Theatre.Seat> seatCopy = new ArrayList<>(theatre.seats);
+        printList(seatCopy);
 
-	    seatCopy.get(1).reserve();
-	    if(theatre.reserveSeat("A02")) {
+        seatCopy.get(1).reserve();
+        if(theatre.reserveSeat("A02")) {
             System.out.println("Please pay for A02");
         } else {
             System.out.println("Seat already reserved");

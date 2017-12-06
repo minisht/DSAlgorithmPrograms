@@ -1,4 +1,4 @@
-package com.minishtera;
+package com.listexample;
 
 import java.util.ArrayList;
 import java.util.*;

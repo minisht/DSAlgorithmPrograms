@@ -1,4 +1,4 @@
-package com.adventuregame;
+package com.mapexample;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,4 +33,3 @@ public class Location {
         return new HashMap<String, Integer>(exits);
     }
 }
-
