@@ -1,4 +1,4 @@
-package com.fizzbuzz;
+package com.programchallenges;
 
 /**
  * Created by minishtera on 11/16/17.

@@ -1,11 +1,11 @@
-package com.reversestring;
+package com.programchallenges;
 
 /**
  * Created by minishtera on 11/15/17.
  */
-public class Main {
+public class ReverseString {
 
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
     public static void main(String[] args) {
         System.out.println(reverse("Minish"));
     }
