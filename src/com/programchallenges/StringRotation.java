@@ -12,25 +12,20 @@ public class StringRotation {
     public static void main(String[] args) throws IOException {
 
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        String line;
-        String totalString = "";
 
-        while ((line = stdin.readLine()) != null && line.length() != 0){
-            totalString = totalString + " " + line;
-//            String[] input = line.split(" ");
-        }
-        String[] input = totalString.split(" ");
-        String str1 = input[0];
-        String str2 = input[1];
-        System.out.println(str1 + ", " + str2);
+        String str1 = "";
+        String str2 = "";
 
-//        String str1 = "AACD";
-//        String str2 = "ACDA";
+        while ((str1 = stdin.readLine()) != null && str1.length() != 0) {
+            str2 = stdin.readLine();
 
-        if (areRotations(str1, str2)){
-            System.out.println("Strings are rotations of each other");
-        } else {
-            System.out.println("Strings are not rotations of each other");
+            System.out.println(str1 + ", " + str2);
+
+            if (areRotations(str1, str2)) {
+                System.out.println("Strings are rotations of each other");
+            } else {
+                System.out.println("Strings are not rotations of each other");
+            }
         }
     }
 
